@@ -1,0 +1,10 @@
+section,article {
+	background-color: green;
+	color: red;
+}
+
+#slide_container {
+	background-color: black;
+}
+
+

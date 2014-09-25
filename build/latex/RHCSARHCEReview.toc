@@ -1,0 +1,35 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}The Workshop - Details}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}The Workshop - Facilitator}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}The Workshop - Intros}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Useful Resources}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}RHEL Overview}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}RHCSA/RHCE Defined}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}RHCSA Info}{13}{chapter.7}
+\contentsline {chapter}{\numberline {8}RHCSA Prep}{15}{chapter.8}
+\contentsline {chapter}{\numberline {9}RHCE Info}{17}{chapter.9}
+\contentsline {chapter}{\numberline {10}RHCE Prep}{19}{chapter.10}
+\contentsline {chapter}{\numberline {11}RHCSA Requirements (ex200)}{21}{chapter.11}
+\contentsline {section}{\numberline {11.1}RHCSA Reqs - Understand and use essential tools (1)}{21}{section.11.1}
+\contentsline {section}{\numberline {11.2}RHCSA Reqs - Understand and use essential tools (2)}{21}{section.11.2}
+\contentsline {section}{\numberline {11.3}RHCSA Reqs - Operate running systems (1)}{21}{section.11.3}
+\contentsline {section}{\numberline {11.4}RHCSA Reqs - Operate running systems (2)}{22}{section.11.4}
+\contentsline {section}{\numberline {11.5}RHCSA Reqs - Configure local storage}{22}{section.11.5}
+\contentsline {section}{\numberline {11.6}RHCSA Reqs - Create and configure file systems}{22}{section.11.6}
+\contentsline {section}{\numberline {11.7}RHCSA Reqs - Deploy, configure, and maintain systems (1)}{22}{section.11.7}
+\contentsline {section}{\numberline {11.8}RHCSA Reqs - Deploy, configure, and maintain systems (2)}{23}{section.11.8}
+\contentsline {section}{\numberline {11.9}RHCSA Reqs - Manage users and groups}{23}{section.11.9}
+\contentsline {section}{\numberline {11.10}RHCSA Reqs - Manage security}{23}{section.11.10}
+\contentsline {chapter}{\numberline {12}RHCE Requirements (ex300)}{25}{chapter.12}
+\contentsline {section}{\numberline {12.1}RHCE Reqs - System configuration and management (1)}{25}{section.12.1}
+\contentsline {section}{\numberline {12.2}RHCE Reqs - System configuration and management (2)}{25}{section.12.2}
+\contentsline {section}{\numberline {12.3}RHCE Reqs - Network services}{25}{section.12.3}
+\contentsline {section}{\numberline {12.4}RHCE Reqs - HTTP/HTTPS}{26}{section.12.4}
+\contentsline {section}{\numberline {12.5}RHCE Reqs - DNS}{26}{section.12.5}
+\contentsline {section}{\numberline {12.6}RHCE Reqs - NFS}{26}{section.12.6}
+\contentsline {section}{\numberline {12.7}RHCE Reqs - SMB}{26}{section.12.7}
+\contentsline {section}{\numberline {12.8}RHCE Reqs - SMTP}{26}{section.12.8}
+\contentsline {section}{\numberline {12.9}RHCE Reqs - SSH}{26}{section.12.9}
+\contentsline {section}{\numberline {12.10}RHCE Reqs - NTP}{26}{section.12.10}
+\contentsline {section}{\numberline {12.11}RHCE Reqs - Database services}{27}{section.12.11}
+\contentsline {chapter}{\numberline {13}Workshop Prep}{29}{chapter.13}
