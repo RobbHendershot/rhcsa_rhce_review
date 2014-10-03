@@ -15,9 +15,14 @@ Shell Commands
 
 .. rst-class:: build
 
-- terminal
-- screen
-- byobu
+    - terminal
+    - screen
+    - byobu
+
+.. note::
+
+    - Demo
+
 
 Redirection
 -----------
@@ -25,18 +30,18 @@ Redirection
 
 .. rst-class:: build
 
-- stdout to file:
+    - stdout to file:
 
-    .. code-block:: sh
+        .. code-block:: sh
 
-        $ echo 'hello world' > outfile
-        $ echo 'wassup' >> outfile
+            $ echo 'hello world' > outfile
+            $ echo 'wassup' >> outfile
 
 .. rst-class:: build
 
-- stderr to stdout:
+    - stderr to stdout:
 
-	.. code-block:: sh
+	    .. code-block:: sh
 
     		$ 2>&1
 
@@ -44,31 +49,32 @@ Redirection
 
 .. rst-class:: build
 
-- pipe:
+    - pipe:
 
-    .. code-block:: sh
+        .. code-block:: sh
 
-        $ ls -al | less
+            $ ls -al | less
 
 .. rst-class:: build
 
-- tee:
+    - tee:
 
-    .. code-block:: sh
+        .. code-block:: sh
 
-        $ ls -al| tee output.txt| less
+            $ ls -al| tee output.txt| less
 
 
 Grep
 ----
 *"Use grep and regular expressions to analyze text"*
 
-**SYNOPSIS**
+grep
 
-    - grep [OPTIONS] REGEXP [FILE...]
-    - grep [OPTIONS] [-e REGEXP | -f FILE] [FILE...]
+    .. code-block:: sh
 
-**DESCRIPTION**
+        $ grep [OPTIONS] REGEXP [FILE...]
+
+description:
     grep  searches  the  named input FILEs (or standard input if no files are named, or if a single hyphen-minus (-) is given as file name) for lines containing a match to the given PATTERN.  By default, grep prints the matching lines.
 
 
@@ -101,6 +107,9 @@ Switch Users
 ------------
 *"Log in and switch users in multiuser targets"*
 
+    .. code-block:: sh
+
+        $ su - <user>
 
 
 Archiving
@@ -158,6 +167,41 @@ Files
 -----
 *"Create, delete, copy, and move files and directories"*
 
+.. rst-class:: build
+
+- create
+
+    .. code-block:: sh
+
+        $ touch <filename>
+        $ mkdir <directory>
+
+.. rst-class:: build
+
+- delete
+
+    .. code-block:: sh
+
+        $ rm <file or directory>
+        $ rmdir <empty directory>
+
+.. nextslide:: 
+
+.. rst-class:: build
+
+- copy
+
+    .. code-block:: sh
+
+        $ cp <source> <destination>
+
+.. rst-class:: build
+
+- move
+
+    .. code-block:: sh
+
+        $ mv <source> <destination>
 
 
 Links
@@ -191,6 +235,91 @@ Permissions
 -----------
 *"List, set, and change standard ugo/rwx permissions"*
 
+ls
+    .. code-block:: sh
+
+        $ ls -l /home/rdhender/
+        drwxrwxr-x. 1 rdhender rdhender  38 Sep 22 21:09 rh_cert
+
+
+.. nextslide:: 
+
+groupings
+
+    .. code-block:: sh
+
+        $ ls -l /home/rdhender/
+        drwxrwxr-x. 1 rdhender rdhender  38 Sep 22 21:09 rh_cert
+
+- owner 
+- group 
+- other
+
+
+.. nextslide:: 
+
+first symbol
+
+    .. code-block:: sh
+
+        $ ls -l /home/rdhender/
+        drwxrwxr-x. 1 rdhender rdhender  38 Sep 22 21:09 rh_cert
+
+- d — a directory
+- \- (dash) — a regular file (rather than directory or link)
+- l — a symbolic link to another program or file elsewhere on the system
+
+
+.. nextslide:: 
+
+other groups
+
+    .. code-block:: sh
+
+        $ ls -l /home/rdhender/
+        drwxrwxr-x. 1 rdhender rdhender  38 Sep 22 21:09 rh_cert
+
+- r — file can be read
+- w — file can be written to
+- x — file can be executed (if it is a program)
+- \- (dash) — specific permission has not been assigned
+
+.. nextslide::
+
+chmod:
+
+    .. code-block:: sh
+
+        $ chmod o+w <filename>
+        $ chmod 775 <filename>
+
+.. nextslide::
+
+identities
+
+- u — the user who owns the file (that is, the owner)
+- g — the group to which the user belongs
+- o — others (not the owner or the owner's group)
+- a — everyone or all (u, g, and o)
+
+permissions
+
+- r — read access
+- w — write access
+- x — execute access
+
+actions
+
+- + — adds the permission
+- \- — removes the permission
+- = — makes it the only permission
+
+numeric
+
+- r = 4
+- w = 2
+- x = 1
+- \- = 0
 
 
 Documentation
@@ -351,11 +480,18 @@ Interrupt Boot
 --------------
 *"Interrupt the boot process in order to gain access to a system"*
 
+# Boot the system and watch for the grub menu.
+# Select a kernel and hit "e".
+# Modify the ro argument to "rw init=/sysroot/bin/sh".
+# Type ctrl+x.
+# Chroot to access the system with "chroot /sysroot".
+# You are now in single user mode as root.
 
 
 Processes
 ---------
 *"Identify CPU/memory intensive processes, adjust process priority with renice, and kill processes"*
+
 
 
 
